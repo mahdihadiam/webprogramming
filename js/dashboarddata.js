@@ -73,11 +73,25 @@ if (dashboard_data[0].trip === "oneway") {
 }else{
     trip0.innerHTML = "رفت و برگشت";
 }
-depart0.innerHTML = dashboard_data[0].depart;
+depart0.innerHTML = `${new Date(dashboard_data[0].depart).toLocaleDateString("fa-IR").split("/")[2]} ${
+    MONTHS[
+        ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+            new Date(dashboard_data[0].depart).toLocaleDateString("fa-IR").split("/")[1]
+        )
+        ]
+} ${new Date(dashboard_data[0].depart).toLocaleDateString("fa-IR").split("/")[0]}`;
+
+
 if (dashboard_data[0].return === undefined) {
     return0.innerHTML = "-";
 } else {
-    return0.innerHTML = dashboard_data[0].return;
+    return0.innerHTML = `${new Date(dashboard_data[0].return).toLocaleDateString("fa-IR").split("/")[2]} ${
+        MONTHS[
+            ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+                new Date(dashboard_data[0].return).toLocaleDateString("fa-IR").split("/")[1]
+            )
+            ]
+    } ${new Date(dashboard_data[0].return).toLocaleDateString("fa-IR").split("/")[0]}`;
 }
 from1.innerHTML = dashboard_data[1].from;
 to1.innerHTML = dashboard_data[1].to;
@@ -85,11 +99,25 @@ if (dashboard_data[1].trip === "oneway") {
     trip1.innerHTML = "یک طرفه";
 }else{
     trip1.innerHTML = "رفت و برگشت";
-}depart1.innerHTML = dashboard_data[1].depart;
+}
+depart1.innerHTML = `${new Date(dashboard_data[1].depart).toLocaleDateString("fa-IR").split("/")[2]} ${
+    MONTHS[
+        ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+            new Date(dashboard_data[1].depart).toLocaleDateString("fa-IR").split("/")[1]
+        )
+        ]
+} ${new Date(dashboard_data[1].depart).toLocaleDateString("fa-IR").split("/")[0]}`;
+
 if (dashboard_data[1].return === undefined) {
     return1.innerHTML = "-";
 } else {
-    return1.innerHTML = dashboard_data[1].return;
+    return1.innerHTML = `${new Date(dashboard_data[1].return).toLocaleDateString("fa-IR").split("/")[2]} ${
+        MONTHS[
+            ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+                new Date(dashboard_data[1].return).toLocaleDateString("fa-IR").split("/")[1]
+            )
+            ]
+    } ${new Date(dashboard_data[1].return).toLocaleDateString("fa-IR").split("/")[0]}`;
 }
 from2.innerHTML = dashboard_data[2].from;
 to2.innerHTML = dashboard_data[2].to;
@@ -97,11 +125,24 @@ if (dashboard_data[2].trip === "oneway") {
     trip2.innerHTML = "یک طرفه";
 }else{
     trip2.innerHTML = "رفت و برگشت";
-}depart2.innerHTML = dashboard_data[2].depart;
+}
+depart2.innerHTML = `${new Date(dashboard_data[2].depart).toLocaleDateString("fa-IR").split("/")[2]} ${
+    MONTHS[
+        ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+            new Date(dashboard_data[2].depart).toLocaleDateString("fa-IR").split("/")[1]
+        )
+        ]
+} ${new Date(dashboard_data[2].depart).toLocaleDateString("fa-IR").split("/")[0]}`;
 if (dashboard_data[2].return === undefined) {
     return2.innerHTML = "-";
 } else {
-    return2.innerHTML = dashboard_data[2].return;
+    return2.innerHTML = `${new Date(dashboard_data[2].return).toLocaleDateString("fa-IR").split("/")[2]} ${
+        MONTHS[
+            ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+                new Date(dashboard_data[2].return).toLocaleDateString("fa-IR").split("/")[1]
+            )
+            ]
+    } ${new Date(dashboard_data[2].return).toLocaleDateString("fa-IR").split("/")[0]}`;
 }
 from3.innerHTML = dashboard_data[3].from;
 to3.innerHTML = dashboard_data[3].to;
@@ -109,11 +150,24 @@ if (dashboard_data[3].trip === "oneway") {
     trip3.innerHTML = "یک طرفه";
 }else{
     trip3.innerHTML = "رفت و برگشت";
-}depart3.innerHTML = dashboard_data[3].depart;
+}
+depart3.innerHTML = `${new Date(dashboard_data[3].depart).toLocaleDateString("fa-IR").split("/")[2]} ${
+    MONTHS[
+        ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+            new Date(dashboard_data[3].depart).toLocaleDateString("fa-IR").split("/")[1]
+        )
+        ]
+} ${new Date(dashboard_data[3].depart).toLocaleDateString("fa-IR").split("/")[0]}`;
 if (dashboard_data[3].return === undefined) {
     return3.innerHTML = "-";
 } else {
-    return3.innerHTML = dashboard_data[3].return;
+    return3.innerHTML = `${new Date(dashboard_data[3].return).toLocaleDateString("fa-IR").split("/")[2]} ${
+        MONTHS[
+            ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+                new Date(dashboard_data[3].return).toLocaleDateString("fa-IR").split("/")[1]
+            )
+            ]
+    } ${new Date(dashboard_data[3].return).toLocaleDateString("fa-IR").split("/")[0]}`;
 }
 from4.innerHTML = dashboard_data[4].from;
 to4.innerHTML = dashboard_data[4].to;
@@ -121,11 +175,24 @@ if (dashboard_data[4].trip === "oneway") {
     trip4.innerHTML = "یک طرفه";
 }else{
     trip4.innerHTML = "رفت و برگشت";
-}depart4.innerHTML = dashboard_data[4].depart;
+}
+depart4.innerHTML = `${new Date(dashboard_data[4].depart).toLocaleDateString("fa-IR").split("/")[2]} ${
+    MONTHS[
+        ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+            new Date(dashboard_data[4].depart).toLocaleDateString("fa-IR").split("/")[1]
+        )
+        ]
+} ${new Date(dashboard_data[4].depart).toLocaleDateString("fa-IR").split("/")[0]}`;
 if (dashboard_data[4].return === undefined) {
     return4.innerHTML = "-";
 } else {
-    return4.innerHTML = dashboard_data[4].return;
+    return4.innerHTML = `${new Date(dashboard_data[4].return).toLocaleDateString("fa-IR").split("/")[2]} ${
+        MONTHS[
+            ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+                new Date(dashboard_data[4].return).toLocaleDateString("fa-IR").split("/")[1]
+            )
+            ]
+    } ${new Date(dashboard_data[4].return).toLocaleDateString("fa-IR").split("/")[0]}`;
 }
 from5.innerHTML = dashboard_data[5].from;
 to5.innerHTML = dashboard_data[5].to;
@@ -133,11 +200,24 @@ if (dashboard_data[5].trip === "oneway") {
     trip5.innerHTML = "یک طرفه";
 }else{
     trip5.innerHTML = "رفت و برگشت";
-}depart5.innerHTML = dashboard_data[5].depart;
+}
+depart5.innerHTML = `${new Date(dashboard_data[5].depart).toLocaleDateString("fa-IR").split("/")[2]} ${
+    MONTHS[
+        ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+            new Date(dashboard_data[5].depart).toLocaleDateString("fa-IR").split("/")[1]
+        )
+        ]
+} ${new Date(dashboard_data[5].depart).toLocaleDateString("fa-IR").split("/")[0]}`;
 if (dashboard_data[5].return === undefined) {
     return5.innerHTML = "-";
 } else {
-    return5.innerHTML = dashboard_data[5].return;
+    return5.innerHTML = `${new Date(dashboard_data[5].return).toLocaleDateString("fa-IR").split("/")[2]} ${
+        MONTHS[
+            ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+                new Date(dashboard_data[5].return).toLocaleDateString("fa-IR").split("/")[1]
+            )
+            ]
+    } ${new Date(dashboard_data[5].return).toLocaleDateString("fa-IR").split("/")[0]}`;
 }
 from6.innerHTML = dashboard_data[6].from;
 to6.innerHTML = dashboard_data[6].to;
@@ -145,11 +225,24 @@ if (dashboard_data[6].trip === "oneway") {
     trip6.innerHTML = "یک طرفه";
 }else{
     trip6.innerHTML = "رفت و برگشت";
-}depart6.innerHTML = dashboard_data[6].depart;
+}
+depart6.innerHTML = `${new Date(dashboard_data[6].depart).toLocaleDateString("fa-IR").split("/")[2]} ${
+    MONTHS[
+        ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+            new Date(dashboard_data[6].depart).toLocaleDateString("fa-IR").split("/")[1]
+        )
+        ]
+} ${new Date(dashboard_data[6].depart).toLocaleDateString("fa-IR").split("/")[0]}`;
 if (dashboard_data[6].return === undefined) {
     return6.innerHTML = "-";
 } else {
-    return6.innerHTML = dashboard_data[6].return;
+    return6.innerHTML = `${new Date(dashboard_data[6].return).toLocaleDateString("fa-IR").split("/")[2]} ${
+        MONTHS[
+            ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+                new Date(dashboard_data[6].return).toLocaleDateString("fa-IR").split("/")[1]
+            )
+            ]
+    } ${new Date(dashboard_data[6].return).toLocaleDateString("fa-IR").split("/")[0]}`;
 }
 from7.innerHTML = dashboard_data[7].from;
 to7.innerHTML = dashboard_data[7].to;
@@ -157,11 +250,24 @@ if (dashboard_data[7].trip === "oneway") {
     trip7.innerHTML = "یک طرفه";
 }else{
     trip7.innerHTML = "رفت و برگشت";
-}depart7.innerHTML = dashboard_data[7].depart;
+}
+depart7.innerHTML = `${new Date(dashboard_data[7].depart).toLocaleDateString("fa-IR").split("/")[2]} ${
+    MONTHS[
+        ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+            new Date(dashboard_data[7].depart).toLocaleDateString("fa-IR").split("/")[1]
+        )
+        ]
+} ${new Date(dashboard_data[7].depart).toLocaleDateString("fa-IR").split("/")[0]}`;
 if (dashboard_data[7].return === undefined) {
     return7.innerHTML = "-";
 } else {
-    return7.innerHTML = dashboard_data[7].return;
+    return7.innerHTML = `${new Date(dashboard_data[7].return).toLocaleDateString("fa-IR").split("/")[2]} ${
+        MONTHS[
+            ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+                new Date(dashboard_data[7].return).toLocaleDateString("fa-IR").split("/")[1]
+            )
+            ]
+    } ${new Date(dashboard_data[7].return).toLocaleDateString("fa-IR").split("/")[0]}`;
 }
 from8.innerHTML = dashboard_data[8].from;
 to8.innerHTML = dashboard_data[8].to;
@@ -169,11 +275,24 @@ if (dashboard_data[8].trip === "oneway") {
     trip8.innerHTML = "یک طرفه";
 }else{
     trip8.innerHTML = "رفت و برگشت";
-}depart8.innerHTML = dashboard_data[8].depart;
+}
+depart8.innerHTML = `${new Date(dashboard_data[8].depart).toLocaleDateString("fa-IR").split("/")[2]} ${
+    MONTHS[
+        ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+            new Date(dashboard_data[8].depart).toLocaleDateString("fa-IR").split("/")[1]
+        )
+        ]
+} ${new Date(dashboard_data[8].depart).toLocaleDateString("fa-IR").split("/")[0]}`;
 if (dashboard_data[8].return === undefined) {
     return8.innerHTML = "-";
 } else {
-    return8.innerHTML = dashboard_data[8].return;
+    return8.innerHTML = `${new Date(dashboard_data[8].return).toLocaleDateString("fa-IR").split("/")[2]} ${
+        MONTHS[
+            ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+                new Date(dashboard_data[8].return).toLocaleDateString("fa-IR").split("/")[1]
+            )
+            ]
+    } ${new Date(dashboard_data[8].return).toLocaleDateString("fa-IR").split("/")[0]}`;
 }
 from9.innerHTML = dashboard_data[9].from;
 to9.innerHTML = dashboard_data[9].to;
@@ -181,10 +300,23 @@ if (dashboard_data[9].trip === "oneway") {
     trip9.innerHTML = "یک طرفه";
 }else{
     trip9.innerHTML = "رفت و برگشت";
-}depart9.innerHTML = dashboard_data[9].depart;
+}
+depart9.innerHTML = `${new Date(dashboard_data[9].depart).toLocaleDateString("fa-IR").split("/")[2]} ${
+    MONTHS[
+        ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+            new Date(dashboard_data[9].depart).toLocaleDateString("fa-IR").split("/")[1]
+        )
+        ]
+} ${new Date(dashboard_data[9].depart).toLocaleDateString("fa-IR").split("/")[0]}`;
 if (dashboard_data[9].return === undefined) {
     return9.innerHTML = "-";
 } else {
-    return9.innerHTML = dashboard_data[9].return;
+    return9.innerHTML = `${new Date(dashboard_data[9].return).toLocaleDateString("fa-IR").split("/")[2]} ${
+        MONTHS[
+            ["۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹", "۱۰", "۱۱", "۱۲"].indexOf(
+                new Date(dashboard_data[9].return).toLocaleDateString("fa-IR").split("/")[1]
+            )
+            ]
+    } ${new Date(dashboard_data[9].return).toLocaleDateString("fa-IR").split("/")[0]}`;
 }
 
